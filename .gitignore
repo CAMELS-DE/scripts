@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# do not synchronize the data folders
+dem/*
+ezgs/*
+input_data/*
+output_data/*
