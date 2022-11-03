@@ -16,11 +16,11 @@ ezg_file = '../ezgs/ezgs_bwby_test3.gpkg' # Example file with 3 catchments (laye
 
 # Select catchment (Layer) from ezg_file (gpkg)
 ezg_id <- 3
-ezg_layer <- st_layers(ezg_file)$name[ezg_id]
-print(ezg_layer)
+ezg_name <- st_layers(ezg_file)$name[ezg_id]
+print(ezg_name)
 
 # Load catchment
-ezg <- readGpkgLayer_dissolvePolygon_calcArea(dsn=ezg_file, layer=ezg_layer, objectid=ezg_id,
+ezg <- readGpkgLayer_dissolvePolygon_calcArea(dsn=ezg_file, layer=ezg_name, objectid=ezg_id,
                                               calcArea = T, returnMulti = T)
 ezg_union <- ezg[[1]]
 ezg_multi <- ezg[[2]]
