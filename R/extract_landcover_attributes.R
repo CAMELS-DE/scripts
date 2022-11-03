@@ -1,4 +1,4 @@
-# Calculate fractions of lans use classes for catchment polygons (from gpkg)
+# Calculate fractions of land use classes for catchment polygons (from gpkg)
 # @author: Pia Ebeling and
 #          land use group of the CAMELS-DE team
 #
